@@ -1,4 +1,4 @@
-[Demo](https://shrinathnayak07.github.io/react-multiform/).
+Form [Demo](https://shrinathnayak07.github.io/react-multiform/)
 
 ## Available Scripts
 
