@@ -13,20 +13,21 @@ export class BasicInfo extends Component {
     return (
         <Jumbotron style={styles.main}>
             <FormGroup>
-                <Label>First Name</Label>
+                <Label>Name</Label>
                 <Input  type="text" 
-                        placeholder="Enter your first name"
-                        defaultValue = {values.firstName} 
-                        onChange = {handleChange('firstName')}
+                        placeholder="Enter your name"
+                        defaultValue = {values.name} 
+                        onChange = {handleChange('name')}
+                        autoFocus = {true}
                     />
             </FormGroup>
 
             <FormGroup>
-                <Label>Last Name</Label>
-                <Input type="text" 
-                    placeholder="Enter your last name"
-                    defaultValue = {values.lastName} 
-                    onChange = {handleChange('lastName')}
+                <Label>Phone Number</Label>
+                <Input type="tel" 
+                    placeholder="Enter your phone number"
+                    defaultValue = {values.phone} 
+                    onChange = {handleChange('phone')}
                 />
             </FormGroup>
 
@@ -48,8 +49,9 @@ export class BasicInfo extends Component {
 const styles = {
     main: {
       width: '50%',
-      margin: '10px auto',
-      padding: '2rem'
+      margin: '20px auto',
+      padding: '2rem',
+      maxWidth: '450px'
     }
   }
 

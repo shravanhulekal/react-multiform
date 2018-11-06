@@ -23,6 +23,7 @@ export class WorkInfo extends Component {
                         placeholder="Enter your occupation"
                         defaultValue = {values.occupation} 
                         onChange = {handleChange('occupation')}
+                        autoFocus = {true}
                     />
             </FormGroup>
 
@@ -58,8 +59,9 @@ const styles = {
     },
     main: {
         width: '50%',
-        margin: '10px auto',
-        padding: '2rem'
+        margin: '20px auto',
+        padding: '2rem',
+        maxWidth: '450px'
     }
 }
 

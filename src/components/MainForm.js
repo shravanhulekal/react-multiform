@@ -9,8 +9,8 @@ export class MainForm extends Component {
         super(props);
         this.state = {
             step : 1,
-            firstName: '',
-            lastName: '',
+            name: '',
+            phone: '',
             email: '',
             city: '',
             occupation: '',
@@ -34,8 +34,8 @@ export class MainForm extends Component {
 
   render() {
       const { step } = this.state;
-      const { firstName, lastName, email, city, occupation, bio } = this.state;
-      const values = { firstName, lastName, email, city, occupation, bio };
+      const { name, phone, email, city, occupation, bio } = this.state;
+      const values = { name, phone, email, city, occupation, bio };
     
       switch (step){
         case 1:
