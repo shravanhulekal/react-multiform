@@ -19,7 +19,7 @@ export class ConfirmInfo extends Component {
         return (
             <ListGroupItem key={key}><strong style={styles.capitalize}>{value[0]}:</strong>{' '}{value[1]}</ListGroupItem>
         );
-    }); 
+    });
     return (
       <Jumbotron style={styles.main}>
           <h6>Confirm User Details</h6>
@@ -40,6 +40,7 @@ const styles = {
         marginTop: '5px'
     },
     main: {
+        width: '90%',
         margin: '20px auto',
         padding: '2rem',
         maxWidth: '450px'

@@ -14,9 +14,9 @@ export class BasicInfo extends Component {
         <Jumbotron style={styles.main}>
             <FormGroup>
                 <Label>Name</Label>
-                <Input  type="text" 
+                <Input  type="text"
                         placeholder="Enter your name"
-                        defaultValue = {values.name} 
+                        defaultValue = {values.name}
                         onChange = {handleChange('name')}
                         autoFocus = {true}
                     />
@@ -24,18 +24,18 @@ export class BasicInfo extends Component {
 
             <FormGroup>
                 <Label>Phone Number</Label>
-                <Input type="tel" 
+                <Input type="tel"
                     placeholder="Enter your phone number"
-                    defaultValue = {values.phone} 
+                    defaultValue = {values.phone}
                     onChange = {handleChange('phone')}
                 />
             </FormGroup>
 
             <FormGroup>
                 <Label>Email</Label>
-                <Input type="email" 
-                    placeholder="Enter your email" 
-                    defaultValue = {values.email} 
+                <Input type="email"
+                    placeholder="Enter your email"
+                    defaultValue = {values.email}
                     onChange = {handleChange('email')}
                 />
             </FormGroup>
@@ -48,6 +48,7 @@ export class BasicInfo extends Component {
 
 const styles = {
     main: {
+      width: '90%',
       margin: '20px auto',
       padding: '2rem',
       maxWidth: '450px'

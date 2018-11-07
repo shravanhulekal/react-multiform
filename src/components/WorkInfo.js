@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Jumbotron, FormGroup, Label, Input } from 'reactstrap';
 
 export class WorkInfo extends Component {
-    
+
     continue = (event) => {
         event.preventDefault();
         this.props.nextStep();
@@ -19,9 +19,9 @@ export class WorkInfo extends Component {
         <Jumbotron style={styles.main}>
             <FormGroup>
                 <Label>Occupation</Label>
-                <Input  type="text" 
+                <Input  type="text"
                         placeholder="Enter your occupation"
-                        defaultValue = {values.occupation} 
+                        defaultValue = {values.occupation}
                         onChange = {handleChange('occupation')}
                         autoFocus = {true}
                     />
@@ -29,18 +29,18 @@ export class WorkInfo extends Component {
 
             <FormGroup>
                 <Label>City</Label>
-                <Input type="text" 
+                <Input type="text"
                     placeholder="Enter your city"
-                    defaultValue = {values.city} 
+                    defaultValue = {values.city}
                     onChange = {handleChange('city')}
                 />
             </FormGroup>
 
             <FormGroup>
                 <Label>Your Bio</Label>
-                <Input type="textarea" 
-                    placeholder="Enter your bio" 
-                    defaultValue = {values.bio} 
+                <Input type="textarea"
+                    placeholder="Enter your bio"
+                    defaultValue = {values.bio}
                     onChange = {handleChange('bio')}
                 />
             </FormGroup>
@@ -58,6 +58,7 @@ const styles = {
         marginTop: '5px'
     },
     main: {
+        width: '90%',
         margin: '20px auto',
         padding: '2rem',
         maxWidth: '450px'

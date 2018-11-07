@@ -15,7 +15,7 @@ export class Success extends Component {
 const styles = {
   main: {
       maxWidth: '650px',
-      width: '70%',
+      width: '90%',
       margin: '10px auto',
       padding: '2rem',
       textAlign: 'center'
