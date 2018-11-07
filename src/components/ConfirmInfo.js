@@ -40,7 +40,6 @@ const styles = {
         marginTop: '5px'
     },
     main: {
-        width: '50%',
         margin: '20px auto',
         padding: '2rem',
         maxWidth: '450px'
